@@ -24,4 +24,11 @@ for element in encodedString:
 # Squash it all together	
 squashedList = "".join(decodedString)
 
-print(squashedList)
+# Make all digits uppercase
+squashedList = squashedList.upper()
+
+print("")
+
+# print sting in 32 character length
+for x in range(0,len(squashedList),32):
+	print(squashedList[x:x+32])

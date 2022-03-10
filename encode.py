@@ -20,9 +20,15 @@ for i in range(0,len(inputstr)):
 for element in inputList:
 	convertedList.append(hex((int(element,16) + randomSeed)% 16)[2:])
 
-# Attach Random Seed Int used in Offset
+# Attach Random Seed Int used in Offset with a 0 in front (for 2 digit hex format)
 convertedList.append(str(0)+hex(randomSeed)[2:])
 
 squashedList = "".join(convertedList)
+
+squashedList = squashedList.upper()
+
 print("")
-print(squashedList)
+
+# print sting in 32 character length
+for x in range(0,len(squashedList),32):
+	print(squashedList[x:x+32])
