@@ -9,4 +9,4 @@ Use case is to convert ascii to hex and then feed that hex string to these scrip
 Feed it a hex string and it generates a random number from 1 - 15 and offsets each digit based on that seed. The seed is appended to the string of encoded digits for decoding
 
 ***decode.py***
-Pulls the last digit from the encoded string and offsets it back to the original value. Prints out the decoded hex string. 
+Pulls the last 2 digit from the encoded string and offsets it back to the original value. Prints out the decoded hex string. 
