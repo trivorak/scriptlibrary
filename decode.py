@@ -19,7 +19,7 @@ encodedString.pop(-1)
 
 # Decode Loop
 for element in encodedString:
-	decodedString.append(hex((int(element,16) - int(key))% 16)[2:])
+	decodedString.append(hex((int(element,16) - int(key,16))% 16)[2:])
 
 # Squash it all together	
 squashedList = "".join(decodedString)
