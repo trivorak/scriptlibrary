@@ -2,7 +2,7 @@
 
 inputString = input("What's your encoded String? {Keep on a Single Line} \n")
 encodedString = []
-decodedString = [] 
+decodedString = []
 
 def getKey(input):
     return input[len(input)-2:len(input)]
