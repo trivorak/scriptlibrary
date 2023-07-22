@@ -1,0 +1,6 @@
+[usb]
+browseable = yes
+path = /mnt/usb_share
+guest ok = yes
+read only = no
+create mask = 777

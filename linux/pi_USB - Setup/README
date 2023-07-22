@@ -1,0 +1,6 @@
+Do inital setup (wifi/domain/enable ssh)
+Set scripts with execute flag 'chmod u+x script.sh'
+Execute step1.sh
+After reboot 
+Exectue step2.sh
+Reboot again
